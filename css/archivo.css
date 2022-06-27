@@ -1,0 +1,414 @@
+
+
+
+/* ////////// BASES ////////////////////////////////////////////////////////////////////////////////////// */
+
+
+* {
+font-family: 'Montserrat', sans-serif;
+text-decoration: none !important;
+}
+
+#al {
+  color: #ffffff !important;
+}
+
+h1 {
+width: 10px !important;
+font-size: 20px;
+color: blue;
+}
+ 
+h4{
+  font-family: monospace !important;
+  font: bold !important;
+}
+
+
+/* ////////// CAMBIO DEL BOOTSTRAP ///////////////////////////////////////////////////////////////////////// */
+
+/*barra de busqueda en home:*/
+.form-inline{
+   width: 300px;
+   flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+
+/*boton search en home*/
+.btn-outline-success{
+   margin-left: 8px !important;
+   flex-direction: row;
+    flex-wrap: nowrap;
+   }
+
+
+/* ////////// GRIDS AREAS ///////////////////////////////////////////////////////////////////////////////// */
+
+/*.form-inline {
+display flex; 
+flex-direction row;
+
+}*/
+
+
+.grid-areas{
+display: grid;
+grid-template-areas: 
+"cabeza cabeza cabeza"
+"titulito titulito titulito"
+"menu partone parttwo"
+"partthree partthree partthree"
+"lateral lateral lateral"
+"pie pie pie";
+background-color: #F4F6F7;
+grid-template-columns:  33.2% 33.2% 33.6%;
+grid-template-rows: 1% 20% 16% 60% 20% 1%;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+width: 100%;
+}
+
+
+header {
+grid-area: cabeza;
+background-color: #ffffff;
+text-align: center;
+}
+
+#titulito {
+grid-area: titulito;
+background-color: #ffffff;
+}
+
+#partcero{
+  grid-area: menu;
+  background-image: url(../img/1.webp) !important;
+  background-repeat: round;
+  bottom: 0 !important;
+}
+
+#partone {
+grid-area: partone;
+background-image: url(../img/2.webp) !important;
+background-repeat: round;
+width: auto;
+    height: auto;
+    bottom: 0 !important;
+}
+
+#parttwo {
+grid-area: parttwo;
+background-image: url(../img/3.webp) !important;
+background-repeat: round;width: auto;
+    height: auto;
+    bottom: 0 !important;
+}
+
+#partthree {
+grid-area: partthree;
+background-color: #ffffff;
+padding: 45px !important;
+}
+
+
+#lateral {
+grid-area: lateral;
+background-color: #ffffff;
+}
+
+
+nav {
+}
+
+  
+aside {
+grid-area: lateral;
+background-color: #ffffff;
+}
+footer {
+grid-area: pie;
+background-color: #F4F6F7;
+}
+
+#foto{
+    width: 100% !important;
+    margin: auto;
+    margin: 5% !important;
+
+}
+
+#foto2{
+  width: 100% !important;
+  margin: auto;
+  margin: 5% !important;
+
+}
+
+#partecero{
+background-image: url(../img/1.webp) !important;
+background-repeat: no-repeat;
+width: auto;
+    height: auto;
+}
+
+#hablemos{
+  background-color: black;
+  color: #ffffff;
+  height: 120%;
+  width: min-content;
+  padding: 10%;
+  }
+
+  #medio{
+    margin-inline: auto;
+  }
+
+  #meilexpo{
+    opacity:0s
+  }
+
+  
+  #hablamos2{
+    background-color: #F4F6F7;
+    text-align: center;
+    padding-top: 8%;
+    padding-bottom: 6%;
+  }
+
+  
+#my-form{
+text-align: center;
+}
+
+
+
+/* //////////   Flex dentro de GRids   ///////////////////////// */
+
+.menu-flex {
+display: flex;
+flex-direction: column;
+}
+
+
+
+/* ////////// CLASES //////////////////////////////////////////////////////////////////////////////////////////// */
+
+.border1 {
+border-style: solid !important;
+border-color:  #F4F6F7 !important;
+margin: 0% !important;
+width: auto;
+    height: auto;
+    bottom: 0 !important;
+
+}
+
+.p2{
+  padding-bottom: 3%;
+}
+
+
+.border0{
+display: grid;
+vertical-align: middle;
+text-align: center;
+justify-content: center;
+align-content: center;
+}
+
+
+/* *_-*_-*_-*_- *_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_- *_-*_-*_-*_-*_-*_-*_-*_- *_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_- */ 
+/*  aca el width no puede ser manual, tiene que ser automatico del textTitle -  *_-*_-*_-*_-*_-*_-**_-*_-*_-*_-*_-*_-**_-*_-*_-*_-*_-*_-*/
+/*  "" CORREGIR / MODIFICAR / MEJORAR / EDITAR / TAREA "" *_-*_-*_-*_-*_-*_-*_-*_-*_-*_- *_*_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_-**_-*_-*-_/
+/* *_-*_-*_-*_- *_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_- *_-*_-*_-*_-*_-*_-*_-*_- *_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_- */ 
+
+.textTitle{
+
+font-size: 400% !important;
+font-family: Tim;
+width: max-content  !important;
+text-align: center  !important;
+color: #000000  !important;
+height: auto  !important;
+vertical-align: middle  !important;
+justify-content: center  !important;
+align-content: center  !important;
+display: contents;
+}
+
+
+
+
+
+
+.centerSection{
+  width: 100% !important;
+   margin: auto;
+   margin: 5% !important;
+}
+
+
+
+.littleTitle{
+  padding-top: 5%;
+  text-shadow: 0 0 10px white;
+color: black !important;
+font-weight: bold !important;
+text-decoration-color: #ffffff !important;
+font-size: 110% ;
+text-align: center;
+justify-content: center;
+
+
+}
+
+
+.text1{
+align-content: center;
+font-style: italic;
+}
+
+.text2{
+  background-color: black;
+  bottom: 0 !important;
+  background: linear-gradient(100deg,rgba(0.4,0.4,0.4,0.4),rgba(0.4,0.4,0.4,0.4) 85%,transparent);
+  text-shadow: 0 0 100px white;
+  color: white!important;
+  padding-left: 5% !important;
+  padding-right: 5% !important;
+  align-content: center;
+  font-weight: bolder !important;
+  text-decoration-color: #F4F6F7 !important;
+  font-size: 95%;
+  font-family: serif;
+  -webkit-text-stroke: 0.01px black;
+}
+
+.text3 {
+  font-family: monospace !important;
+align-content: center;
+text-align: center;
+justify-content: center;
+
+}
+
+
+
+.pictureCustomer{
+  width: 30% !important;
+  height: auto;
+  padding: 0.5%;
+}
+
+.footerText1{
+   text-align:  left;
+}
+
+.footerText2{
+   text-align:  right;
+
+}
+
+/* ///////////////////////////////////////////////////////// */
+
+
+
+/* //////////   Flex para Tablet   ///////////////////////// */
+
+
+/*
+
+@media only screen and (min-width: 768px) {
+   .container {
+       grid-template-columns: repeat(4, 1fr);
+   }
+   .box-2 {
+     grid-row: 1 / 3;
+     grid-column: 1 / 3;
+   }
+     .box-1 {
+     grid-row: 1 / 2;
+     grid-column: 3 / 5;
+   }
+     .box-3 {
+     grid-column: 3 / 5;
+     grid-row: 2 / 3;
+   }
+  
+   .box-4 {
+     grid-column: 1 / 2;
+     grid-row: 3 / 4;
+   }
+
+   .box-5 {
+     grid-column: 2 / 4;
+     grid-row: 3 / 4;
+   }
+}
+*/
+
+
+/* //////////   Flex para pc   ///////////////////////// */
+
+
+/*
+@media only screen and (min-width: 1024px) {
+   .container {
+       grid-template-columns: repeat(3, 1fr);
+   }
+   .box-1 {
+     grid-column: 1 / span 3;
+     grid-row: 1 / 2;
+   }
+   .box-2 {
+     grid-column: 1 / span 3;
+     grid-row: 2 / 3;
+   }
+     .box-3 {
+     grid-column: 1 / 3;
+     grid-row: 3 / 6;
+   }
+  
+   .box-4 {
+     grid-column: 3 / 4;
+     grid-row: 3 / 6;
+   }
+
+   .box-5 {
+     grid-column: 1 / 4;
+     grid-row: 6 / 7;
+   }
+}
+*/
+
+
+/*
+<!-- Made by Gque® -->
+<!-- 
+  ....................................................................................
+  ....................................................................................
+  .......*********....................................................................
+  ....*****.....*****.................................................................
+  ...****.........***.................................................................
+  ..****..............................................................................
+  .****...............................................................................
+  *****...............................................................................
+  *****...............................................................................
+  *****...............................................................................
+  .****.......********.........*********........****.....****.......*********.........
+  ..****.......*******.....*****....******......****.....****....*****......****......
+  ...****.........****.....****......*****......****.....****....****.......****......
+  ....****************.....****......*****......****.....****....****...********......
+  ....****************.....*****....******.......****...****.....*****................
+  ........*********...........*********...........**********.......*********..........
+   ........*********...........*********...........**********.......*********.........
+  ...................................*******..........................................
+  ....................................******..........................................
+  ....................................................................................
+  .................................................................................... 
+  ...........................https://github.com/fcurrao...............................
+  ....................................................................................
+ -->
+<!-- Made by Gque® -->
+*/
