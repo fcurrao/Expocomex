@@ -61,7 +61,7 @@ h4{
   #f1 {
     grid-area: f1;
     background-image: url(../img/1.webp) !important;
-    background-repeat: no-repeat;
+    background-repeat: round;
     text-align: center;
     height: 150% !important;
     
@@ -69,14 +69,14 @@ h4{
     #f2 {
       grid-area: f2;
       background-image: url(../img/2.webp) !important;
-      background-repeat: no-repeat;
+      background-repeat: round;
       text-align: center;
       height: 150% !important;
       }
       #f3 {
         grid-area: f3;
         background-image: url(../img/3.webp) !important;
-        background-repeat: no-repeat;
+        background-repeat: round;
         text-align: center;
         height: 150% !important;
         }
@@ -132,7 +132,7 @@ grid-area: titulito;
 background-color: #ffffff;
 width: 100%  !important;
 height: 100% !important;
-padding: 10%;
+padding-top: 4%;
 }
 
 #partcero{
@@ -165,7 +165,8 @@ background-repeat: no-repeat;width: auto;
 #partthree {
 grid-area: partthree;
 background-color: #ffffff;
-padding: 45px !important;
+padding-bottom: 2px !important;
+padding-top: 30px !important;
 }
 
 
@@ -192,15 +193,13 @@ background-color: #F4F6F7;
 
 #foto{
     width: 100% !important;
-    margin: auto;
-    margin: 5% !important;
+    margin: auto; 
 
 }
 
 #foto2{
   width: 100% !important;
-  margin: auto;
-  margin: 5% !important;
+  margin: auto; 
 
 }
 
@@ -225,7 +224,7 @@ width: 50%;
     background-color: #ffffff;
     width: max-content;
     height: 100% !important;
-    padding: 10%;
+    padding: 3%;
   }
 
   #meilexpo{
@@ -332,7 +331,6 @@ height: 100% !important;
 .centerSection{
   width: 100% !important;
    margin: auto;
-   margin: 5% !important;
 }
 
 
@@ -407,6 +405,21 @@ justify-content: center;
   /* body{
     background-color: red !important;
   } */
+
+  
+.littleTitle{
+  padding-top: 5%;
+  text-shadow: 0 0 10px white;
+color: black !important;
+font-weight: bold !important;
+text-decoration-color: #ffffff !important;
+font-size: 40% ;
+text-align: center;
+justify-content: center;
+width: 100%  !important;
+height: 100% !important;
+
+}
 
   .text2{
     display: none;
