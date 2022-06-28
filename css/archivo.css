@@ -15,7 +15,7 @@ text-decoration: none !important;
 
 h1 {
 width: 10px !important;
-font-size: 20px;
+font-size: 20%;
 color: blue;
 }
  
@@ -43,6 +43,56 @@ h4{
    }
 
 
+   
+
+.grid-areas2{
+  display: grid;
+  grid-template-areas: 
+  "f1 f2 f3"
+  "t1 t2 t3";
+  background-color: #F4F6F7;
+  grid-template-columns:  33.2% 33.2% 33.6%;
+  grid-template-rows: 1fr 0.5fr; 
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 100%;
+  } 
+
+  #f1 {
+    grid-area: f1;
+    background-image: url(../img/1.webp) !important;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 150% !important;
+    
+    }
+    #f2 {
+      grid-area: f2;
+      background-image: url(../img/2.webp) !important;
+      background-repeat: no-repeat;
+      text-align: center;
+      height: 150% !important;
+      }
+      #f3 {
+        grid-area: f3;
+        background-image: url(../img/3.webp) !important;
+        background-repeat: no-repeat;
+        text-align: center;
+        height: 150% !important;
+        }
+        #t1 {
+          grid-area: t1;
+          text-align: center;
+          }
+          #t2 {
+            grid-area: t2;
+            text-align: center;
+            }
+            #t3 {
+              grid-area: t3;
+              text-align: center;
+              }
+
 /* ////////// GRIDS AREAS ///////////////////////////////////////////////////////////////////////////////// */
 
 /*.form-inline {
@@ -50,7 +100,7 @@ display flex;
 flex-direction row;
 
 }*/
-
+/* 
 
 .grid-areas{
 display: grid;
@@ -63,11 +113,12 @@ grid-template-areas:
 "pie pie pie";
 background-color: #F4F6F7;
 grid-template-columns:  33.2% 33.2% 33.6%;
-grid-template-rows: 1% 20% 16% 60% 20% 1%;
+grid-template-rows: 1fr 2fr 2fr 3fr 2fr 1fr;
+ grid-template-rows: 5% 20% 16% 30% 16% 1%; 
 grid-column-gap: 0px;
 grid-row-gap: 0px;
 width: 100%;
-}
+} */
 
 
 header {
@@ -79,28 +130,34 @@ text-align: center;
 #titulito {
 grid-area: titulito;
 background-color: #ffffff;
+width: 100%  !important;
+height: 100% !important;
+padding: 10%;
 }
 
 #partcero{
+  width: 400% !important;
   grid-area: menu;
   background-image: url(../img/1.webp) !important;
-  background-repeat: round;
+  background-repeat: no-repeat;
   bottom: 0 !important;
 }
 
 #partone {
+  width: 400% !important;
 grid-area: partone;
 background-image: url(../img/2.webp) !important;
-background-repeat: round;
+background-repeat: no-repeat;
 width: auto;
     height: auto;
     bottom: 0 !important;
 }
 
 #parttwo {
+  width: 400% !important;
 grid-area: parttwo;
 background-image: url(../img/3.webp) !important;
-background-repeat: round;width: auto;
+background-repeat: no-repeat;width: auto;
     height: auto;
     bottom: 0 !important;
 }
@@ -114,6 +171,7 @@ padding: 45px !important;
 
 #lateral {
 grid-area: lateral;
+text-align: center !important;
 background-color: #ffffff;
 }
 
@@ -123,6 +181,7 @@ nav {
 
   
 aside {
+  text-align: center !important;
 grid-area: lateral;
 background-color: #ffffff;
 }
@@ -148,7 +207,7 @@ background-color: #F4F6F7;
 #partecero{
 background-image: url(../img/1.webp) !important;
 background-repeat: no-repeat;
-width: auto;
+width: 50%;
     height: auto;
 }
 
@@ -162,6 +221,11 @@ width: auto;
 
   #medio{
     margin-inline: auto;
+    grid-area: titulito;
+    background-color: #ffffff;
+    width: max-content;
+    height: 100% !important;
+    padding: 10%;
   }
 
   #meilexpo{
@@ -194,28 +258,43 @@ flex-direction: column;
 
 /* ////////// CLASES //////////////////////////////////////////////////////////////////////////////////////////// */
 
+.grid-areas{
+align-content: center !important;
+  text-align: center !important;
+}
+/* 
 .border1 {
 border-style: solid !important;
 border-color:  #F4F6F7 !important;
 margin: 0% !important;
-width: auto;
+width: 50% !important;
     height: auto;
     bottom: 0 !important;
 
-}
+} */
 
 .p2{
+  font-size: 80%;
   padding-bottom: 3%;
+  width: 100%  !important;
+height: 100% !important;
 }
 
-
+.fotosTodasJuntas{
+  justify-items: center;
+  float: left;
+}
+/* 
 .border0{
-display: grid;
+/* display: grid; 
 vertical-align: middle;
-text-align: center;
+text-align: center !important;
 justify-content: center;
 align-content: center;
-}
+width: 50% !important;
+
+height: 100% !important;
+} */
 
 
 /* *_-*_-*_-*_- *_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_- *_-*_-*_-*_-*_-*_-*_-*_- *_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_-*_- */ 
@@ -225,9 +304,10 @@ align-content: center;
 
 .textTitle{
 
-font-size: 400% !important;
+font-size: 3  00% !important;
 font-family: Tim;
-width: max-content  !important;
+width: 100%  !important;
+height: 100% !important;
 text-align: center  !important;
 color: #000000  !important;
 height: auto  !important;
@@ -235,6 +315,13 @@ vertical-align: middle  !important;
 justify-content: center  !important;
 align-content: center  !important;
 display: contents;
+}
+
+.textTitle4{
+  font-size: 200% !important;
+  width: 100%  !important;
+height: 100% !important;
+
 }
 
 
@@ -259,8 +346,8 @@ text-decoration-color: #ffffff !important;
 font-size: 110% ;
 text-align: center;
 justify-content: center;
-  width: 100% !important;
-
+width: 100%  !important;
+height: 100% !important;
 
 }
 
@@ -273,7 +360,7 @@ font-style: italic;
 .text2{
   background-color: black;
   bottom: 0 !important;
-  background: linear-gradient(100deg,rgba(0.4,0.4,0.4,0.4),rgba(0.4,0.4,0.4,0.4) 85%,transparent);
+  background: linear-gradient(100deg,rgba(0.4,0.4,0.4,0.4),rgba(0.4,0.4,0.4,0.4) 15%,transparent);
   text-shadow: 0 0 100px white;
   color: white!important;
   padding-left: 5% !important;
@@ -281,15 +368,14 @@ font-style: italic;
   align-content: center;
   font-weight: bolder !important;
   text-decoration-color: #F4F6F7 !important;
-  font-size: 90%;
+  font-size: 95%;
   font-family: serif;
   -webkit-text-stroke: 0.01px black;
-    width: 100% !important;
-
 }
 
 .text3 {
   font-family: monospace !important;
+  padding-bottom: 5%;
 align-content: center;
 text-align: center;
 justify-content: center;
@@ -312,6 +398,30 @@ justify-content: center;
    text-align:  right;
 
 }
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+  /* body{
+    background-color: red !important;
+  } */
+
+  .text2{
+    display: none;
+  }
+  .text3 {
+  
+    font-family: monospace !important;
+    padding-top: 10%;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  
+  }
+}
+
 
 /* ///////////////////////////////////////////////////////// */
 
