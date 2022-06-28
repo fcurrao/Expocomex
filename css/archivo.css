@@ -259,6 +259,7 @@ text-decoration-color: #ffffff !important;
 font-size: 110% ;
 text-align: center;
 justify-content: center;
+  width: 100% !important;
 
 
 }
@@ -280,9 +281,11 @@ font-style: italic;
   align-content: center;
   font-weight: bolder !important;
   text-decoration-color: #F4F6F7 !important;
-  font-size: 95%;
+  font-size: 90%;
   font-family: serif;
   -webkit-text-stroke: 0.01px black;
+    width: 100% !important;
+
 }
 
 .text3 {
