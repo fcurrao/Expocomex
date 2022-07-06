@@ -26,7 +26,7 @@
  
        }
  
- 
+
  
        var form = document.getElementById("my-form");
        let nombrex = document.getElementById("name").value;
